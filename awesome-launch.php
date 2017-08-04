@@ -404,7 +404,7 @@ class Awesome_Launch{
 			$context['posts'] = Timber::query_posts();
 		
 		if(isset($post->ID))
-			$context['post'] = new Awesome_Post_launch($post->ID);
+			$context['post'] = new Awesome_Post_Launch($post->ID);
 		
 		$context['cap']['is_tablet'] = AWESOME_LAUNCH::$Mobile_Detect->isTablet();
 		$context['cap']['is_mobile'] = AWESOME_LAUNCH::$Mobile_Detect->isMobile();
